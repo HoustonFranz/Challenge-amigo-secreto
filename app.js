@@ -32,9 +32,10 @@ function sortearAmigo(){
     //a suertudo le asignamos el input donde va el resultado
     let suertudo = document.getElementById('resultado');
     // validamos de que la lista de amigos no esté vacía
-    listadeamigos === '' ? alert('ingrese los amigos porfavor') : (suertudo.innerHTML=(`el amigo secreto sorteado es: ${listadeamigos[indicesorteado]}`));   
+    !listadeamigos.length ? alert('ingrese los amigos porfavor') : (suertudo.innerHTML=(`el amigo secreto sorteado es: ${listadeamigos[indicesorteado]}`));   
 }
 
 function Limpiarinput(input){
     document.getElementById(input).value='';
+
 }
